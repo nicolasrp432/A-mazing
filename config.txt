@@ -1,0 +1,24 @@
+# A-Maze-ing default configuration file
+# Lines starting with '#' are comments and will be ignored.
+# Empty lines are also ignored.
+# Format: KEY=VALUE (no spaces around '=').
+
+# Maze dimensions (number of cells).
+WIDTH=20
+HEIGHT=15
+
+# Entry and exit coordinates as x,y (0-indexed).
+# They must be inside the maze and different from each other.
+ENTRY=0,0
+EXIT=19,14
+
+# Output file where the hexadecimal representation is written.
+OUTPUT_FILE=maze.txt
+
+# If True, the maze is "perfect": exactly one path between ENTRY and EXIT.
+# If False, additional walls are removed to create loops.
+PERFECT=True
+
+# Optional: seed for the random generator. Same seed => same maze.
+# Remove this line to use a random seed each run.
+SEED=42
